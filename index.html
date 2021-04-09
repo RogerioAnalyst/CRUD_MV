@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud - Javascript puro no Html</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="animation-area">
+        <button class="btn btn1 btn2"><a href="inicio.html">Voltar</a></button>
+        
+		<ul class="box-area">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+    
+    <!-- Form for crud operations-->
+    <form class="formulario mx-auto" style="width: 60%;" onsubmit="event.preventDefault(); enviarOn();" autocomplete="off">
+        <div>
+          <label>Nome do Time:</label>
+          <small class="form-text text-dark">Por favor preencher o nome do time completo</small>
+          <input type="text" class="form-control" name="nomeCompleto" id="nomeCompleto">
+        </div>
+        <div>
+            <label>Quantidade de Jogadores:</label>
+            <input type="number" class="form-control" name="QtdeJogadores" id="QtdeJogadores">
+        </div>
+        <div>
+            <label>Deseja Participar do campeonato?</label>
+            <!-- <input type="radio" class="form-control" name="nickname" id="nickname"> -->
+            <div>
+            <label for="sim">
+                <input type="radio" name="lembrar" id="resposta" value="sim">Sim
+            </label>
+            
+                <label for="nao">
+                    <input type="radio" name="lembrar" id="resposta1" value="nao">Não
+                </label>
+            </div>
+
+        </div>
+        <div>
+            <label>Cidade Origem do time:</label>
+            <input type="text" class="form-control" name="cidade" id="cidade">
+
+        </div>
+        <div class="form-action-buttons" id="enviar">
+            <input class="btn btn-outline-light" type="submit" value="Enviar">
+        </div>
+      </form>
+
+
+    <table class="total mx-auto" style="width: 82%;">
+        <tr>
+            <td>
+                <!-- Tabela para listar tudo-->
+                <table class="list" id="listaEmpregados">
+                    
+                    <thead>
+                        <tr>
+                            <th>Nome completo:</th>
+                            <th>Quantidade de Jogadores:</th>
+                            <th>Deseja participar do campeonato?</th>
+                            <th>Cidade de Origem:</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
