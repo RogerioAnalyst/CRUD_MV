@@ -13,3 +13,5 @@ Segue algumas funções em js.
 -Função para toda vez que enviar os dados ele limpar o formulario para novas entradas de dados
 -Função para editar o dado já inserido -> e posteriormente colocar de volta no form
 -Função para criar um alert para confirmar a exclusão dos dados (com mensagem explicita)
+
+![CRUDMV](https://user-images.githubusercontent.com/67661998/114150683-b7515380-98f2-11eb-91ff-53e64609313c.png)
