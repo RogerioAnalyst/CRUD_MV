@@ -1,3 +1,7 @@
+-Interface Inicial personalizada com css3. 
+-Utilizado algumas documentações do bootstrap.
+
+
 Está é uma aplicação baseada em javascript puro, um CRUD no html no frontend ao invés do backend.
 Foi construida com bastantes funçoes para retornar valores na tela após o click do enviar formulário.
 Segue algumas funções em js.
